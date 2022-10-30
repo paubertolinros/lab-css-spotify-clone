@@ -7,6 +7,186 @@ White: #FFF
 
 */
 
-body {
-    background-color: blue;
+html, body {
+    font-family: 'Raleway', sans-serif;
+    font-size: 16px; 
+    font-weight: 300;
+    color: #1A1A1A;
 }
+
+h1 {
+    font-size: 5.7rem;
+    font-weight: 700;
+    color: #ffffff
+}
+
+h2 {
+    font-size: 4.7rem;
+    font-weight: 500;
+}
+
+h3 {
+    font-size: 2.3rem;
+    font-weight: 500;
+    color: #1A1A1A;
+
+}
+
+h4 {
+    font-size: 2.1rem;
+    padding-top: 2vh;
+    line-height: 2.5rem;
+}
+
+h5 {
+    font-size: 1.8rem;
+    padding: 5vh 0 6vh;
+    font-weight: 700;
+    color: #00B172;
+    
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 100;
+    
+}
+
+/*----------SECTION 1: HEADER -----------*/
+
+/*-----NAV + LOGO-----*/
+.logo-menu {
+    padding: 1.5vh 8vh;
+    position: sticky;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+}
+
+.logo {
+    height: 8vh;
+}
+
+.menu ul{
+    display: flex;
+    gap: 3vh;   
+}
+
+.menu ul li a {
+    color:#1A1A1A;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+/*-----HEADER PHOTO + TITTLE-----*/
+
+.photo-header {
+    background-image: url("../images/landing.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.photo-header h1{
+    padding: 0 0 20px 0;
+    text-align: center;
+}
+
+.photo-header h4{
+    width: 53%;
+    text-align: center;
+    color: #ffffff;
+}
+
+/*----------SECTION 2-----------*/
+
+.second-section {
+    margin: 15vh 5vh
+}
+
+.underline {
+    text-decoration: underline;
+    text-decoration-color: #00B172;
+    text-underline-offset: 2vh;
+}
+
+.container > img {
+    height: 20vh;
+}
+
+.title2 {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 10vh;
+}
+
+.section-3-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.container {
+    width: 20%;
+    text-align: center;
+}
+
+/*----------SECTION 3-----------*/
+.protitle-3 h3 {
+    color: #ffffff;
+    padding-bottom:2vh;
+}
+
+.underline- {
+    text-decoration: underline;
+    text-decoration-color: #ffffff;
+    text-underline-offset: 2vh;
+}
+
+.t3-section {
+    background-color: #00B172;
+    margin: 0 5vh 5vh 5vh;
+    padding: 9vh 10vh;
+}
+
+.title-3 {
+    display: flex;
+    align-content: flex-start;
+}
+
+.third-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.third-section div h3, .third-section div h5, .third-section div p {
+    color: white;
+}
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+}
+
+.container2 {
+    display: flex;
+    align-self: flex-start;
+}
+
+.logo-white {
+   width: 15vh;
+   height: 15vh;
+}
+
+.container2 img {
+    height: 60vh;
+}
+
