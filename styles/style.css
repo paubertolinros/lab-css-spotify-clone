@@ -34,14 +34,15 @@ h4 {
 
 h5 {
     font-size: 1.8rem;
-    padding: 5vh 0 6vh;
+    padding: 7vh 0 4vh;
     font-weight: 700;
     color: #00B172;  
 }
 
 p {
     font-size: 1.5rem;
-    font-weight: 100;   
+    font-weight: 100; 
+    line-height: 3.8vh;  
 }
 
 /*----------SECTION 1: HEADER-----------*/
@@ -138,7 +139,6 @@ section.artist-section {
     padding: 9vh 10vh;
 }
 
-
 section.artist-section div.artist-section-title h3 {
     color: #ffffff;
     padding-bottom:2vh;
@@ -182,12 +182,150 @@ section.artist-section div.artist-photo-section img.kanye-west-photo {
     height: 60vh;
 }
 
+/*---------MEDIA QUERIE SECTION----------*/
 
+/*--------MW:1171px---------*/
+
+@media (max-width: 1171px) {
+
+/*----------SECTION 2-----------*/
+
+    section.services-section {
+        margin: 5vh 1vh;
+    }
+
+    section.services-section div.title-services-section {
+        display: flex;
+        justify-content: center;
+        padding-bottom: 10vh;
+    }
+
+    section.services-section div.title-services-section h3 span.underline {
+        text-decoration: underline;
+        text-decoration-color: #00B172;
+        text-underline-offset: 10px;
+    }
+
+    section.services-section div.section-services-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.services-section div.section-services-container section.container {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 5vh;
+        width: 60%; 
+    }
+
+    section.services-section div.section-services-container section.container > img {
+        height: 13vh;
+    }
+}
+
+/*--------MW:1200px---------*/
+
+@media (max-width: 1200px) {
+    
+    /*----------SECTION 3-----------*/
+
+    .artist-descriptions h5 {
+        padding: 4vh 0 2vh;
+    }
+
+    section.artist-section {
+        background-color: #00B172;
+        margin: 0 3vh 3vh;
+        padding: 6vh 4vh;
+    }
+
+    section.artist-section div.artist-section-title h3 {
+        color: #ffffff;
+        padding-bottom: 4vh;
+    }
+
+    section.artist-section div.artist-section-title h3 span.underline2 {
+        text-decoration: underline;
+        text-decoration-color: #ffffff;
+        text-underline-offset: 2vh;
+    }
+
+    section.artist-section div.artist-section-info {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    section.artist-section div.artist-section-info div.artist-descriptions {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+    }
+
+    section.artist-section div.artist-section-info div.artist-descriptions h5,  
+    section.artist-section div.artist-section-info div.artist-descriptions p {
+        color: white;
+    }
+    section.artist-section div.artist-section-info div.artist-descriptions p {
+        padding-bottom: 6vh;
+    }
+
+    section.artist-section div.logo-white-artist-section img.logo-white {
+        width: 15vh;
+        height: 15vh;
+        padding-top: 3vh;
+    }
+
+    section.artist-section div.artist-photo-section {
+        margin: 7vh auto 1vh auto;
+    }
+
+    section.artist-section div.artist-photo-section img.kanye-west-photo {
+        height: 60vh;   
+    }
+}
+
+/*--------MW:969px---------*/
+
+@media (max-width: 969px) {
+   
+    /*----------SECTION 1-----------*/
+
+    section.section-logo-nav {
+        padding: 1.5vh 2vh;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+    
+    section.section-logo-nav img.logo-nav {
+        height: 5.5vh;
+    }
+    
+    section.section-logo-nav nav.nav-menu ul{
+        display: flex;
+        gap: 2vh;   
+    }
+    
+    section.section-logo-nav nav.nav-menu ul li a {
+        color:#1A1A1A;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
+
+/*--------MW:830px---------*/
 
 @media (max-width: 830px) {
     html, body {
         width: 100%;
-        background-color: blue;
         font-size: 16px;   
     }
 
@@ -286,6 +424,96 @@ section.artist-section div.artist-photo-section img.kanye-west-photo {
     }
 
     /*----------SECTION 3-----------*/
+    .artist-descriptions h5 {
+        padding: 2vh 0 2vh;
+    } 
+
+    section.artist-section div.artist-section-title h3 {
+        color: #ffffff;
+        padding-bottom: 4vh;
+    }
+
+/*--------MW:560px---------*/
+
+@media (max-width: 560px) {
+
+    /*----------SECTION 1-----------*/
+
+    section.section-logo-nav {
+        padding: 1.5vh 1vh;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    section.section-logo-nav img.logo-nav {
+        height: 3.5vh;
+    }
+    
+    section.section-logo-nav nav.nav-menu ul{
+        display: flex;
+        gap: 1vh;   
+    }
+    
+    section.section-logo-nav nav.nav-menu ul li a {
+        color:#1A1A1A;
+        text-decoration: none;
+        font-size: 1rem;
+    }
+}
+
+/*--------MW:465px---------*/
+
+@media (max-width: 465px) {
+
+    /*----------SECTION 3-----------*/
+
+    section.artist-section div.artist-section-title h3 {
+        color: #ffffff;
+        padding-bottom: 4vh;
+        line-height: 5vh;
+    }
+
+    section.artist-section div.artist-section-title h3 span.underline2 {
+        text-decoration: underline;
+        text-decoration-color: #ffffff;
+        text-underline-offset: 1vh;
+    }    
+}
+
+/*--------MW:393px---------*/
+
+@media (max-width: 393px) {
+
+    /*----------SECTION 1-----------*/
+    
+    section.section-logo-nav {
+        padding: 1.5vh 1vh;
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    section.section-logo-nav img.logo-nav {
+        height: 2.5vh;
+    }
+    
+    section.section-logo-nav nav.nav-menu ul{
+        display: flex;
+        gap: 0.5vh;   
+    }
+    
+    section.section-logo-nav nav.nav-menu ul li a {
+        color:#1A1A1A;
+        text-decoration: none;
+        font-size: 0.8rem;
+    }
+
+    /*----------SECTION 3-----------*/
 
     section.artist-section {
         background-color: #00B172;
@@ -333,44 +561,12 @@ section.artist-section div.artist-photo-section img.kanye-west-photo {
     }
 
     section.artist-section div.artist-photo-section {
-        margin: 7vh auto 1vh auto;
+        display: flex;
+        align-items: center;
+        
     }
 
     section.artist-section div.artist-photo-section img.kanye-west-photo {
-        height: 60vh;
+        height: 60vh; 
     }
-        
-    
-    }
-
-    @media (max-width: 515px) {
-       
-        section.section-logo-nav {
-            padding: 1.5vh 1vh;
-            position: sticky;
-            top: 0;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: purple;
-        }
-        
-        section.section-logo-nav img.logo-nav {
-            height: 3.5vh;
-        }
-        
-        section.section-logo-nav nav.nav-menu ul{
-            display: flex;
-            gap: 1vh;   
-        }
-        
-        section.section-logo-nav nav.nav-menu ul li a {
-            color:#1A1A1A;
-            text-decoration: none;
-            font-size: 1rem;
-        }
-    
-    }
-
-    
-      
+}
